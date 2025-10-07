@@ -71,7 +71,7 @@
 
   // Accent color extraction from logo -> sets CSS variables used by [data-accent]
   try {
-    const logoSrc = './docs/white_temple_logo.png';
+    const logoSrc = './assets/img/white_temple_logo.png';
     const img = new Image();
     img.onload = () => {
       try {
