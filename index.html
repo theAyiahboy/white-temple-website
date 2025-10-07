@@ -36,7 +36,7 @@
               heading: ['Montserrat', 'ui-sans-serif', 'system-ui', 'sans-serif'],
               body: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
             },
-            container: { center: true, padding: '1rem' },
+            container: { center: true, padding: '1.25rem', screens: { sm: '600px', md: '728px', lg: '984px', xl: '1240px', '2xl': '1440px' } },
             boxShadow: { copper: '0 10px 25px rgba(184, 115, 51, 0.25)' }
           }
         }
@@ -46,10 +46,10 @@
     <!-- Custom styles -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
-  <body class="font-body text-charcoal bg-white scroll-smooth">
+<body class="font-body text-charcoal bg-white scroll-smooth leading-relaxed">
     <!-- Top contact bar (placeholders; replace with real info) -->
     <div class="bg-charcoal text-white text-sm">
-      <div class="container flex flex-col md:flex-row md:items-center md:justify-between gap-1 py-2">
+<div class="container max-w-screen-2xl flex flex-col md:flex-row md:items-center md:justify-between gap-1 py-2">
         <div class="flex flex-wrap items-center gap-4">
           <span class="opacity-90">No: 65 Derby Avenue, Accra <span class="hidden sm:inline">(Near Arena Lorry Park)</span></span>
           <span class="opacity-90">Phone: <span class="font-medium">024 328 4859</span> · <span class="font-medium">050 158 1628</span></span>
@@ -60,10 +60,10 @@
     </div>
 
     <!-- Header / Nav -->
-    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-gray-100">
-      <nav class="container flex items-center justify-between py-4">
+<header class="sticky top-0 z-50 bg-white border-b border-gray-100">
+<nav class="container max-w-screen-2xl flex items-center justify-between py-5 md:py-6">
         <a href="#home" class="flex items-center gap-2 group">
-          <span class="inline-block h-3 w-3 rounded-full bg-gradient-to-br from-copper-400 to-copper-600 shadow-copper"></span>
+<img src="./docs/white_temple_logo.png" alt="White Temple Agencies logo" class="h-12 w-auto object-contain" />
           <span class="font-heading text-lg md:text-xl tracking-wide">White Temple Agencies</span>
         </a>
         <button id="mobile-nav-toggle" class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-charcoal hover:bg-gray-100 focus:outline-none" aria-label="Open menu">
@@ -76,22 +76,22 @@
           <li><a href="#projects" class="hover:text-deepgreen">Projects</a></li>
           <li><a href="#contact" class="hover:text-deepgreen">Contact Us</a></li>
           <li>
-            <button data-open-quote class="inline-flex items-center gap-2 rounded-md bg-gradient-to-r from-copper-400 to-copper-600 px-4 py-2 font-medium text-white shadow-copper hover:opacity-95">
+<button data-open-quote data-accent class="inline-flex items-center gap-2 rounded-md px-4 py-2 font-medium text-white shadow-accent hover:opacity-95" style="background: linear-gradient(to right, var(--accent-from), var(--accent-to));">
               <span>Get a Free Estimate</span>
             </button>
           </li>
         </ul>
       </nav>
       <!-- Mobile Menu -->
-      <div id="mobile-menu" class="md:hidden hidden border-t border-gray-100">
-        <div class="container py-3">
+<div id="mobile-menu" class="md:hidden hidden border-t border-gray-100 bg-white">
+<div class="container max-w-screen-2xl py-3">
           <ul class="grid gap-2">
             <li><a href="#home" class="block px-2 py-2 rounded hover:bg-gray-50">Home</a></li>
             <li><a href="#about" class="block px-2 py-2 rounded hover:bg-gray-50">About Us</a></li>
             <li><a href="#services" class="block px-2 py-2 rounded hover:bg-gray-50">Services</a></li>
             <li><a href="#projects" class="block px-2 py-2 rounded hover:bg-gray-50">Projects</a></li>
             <li><a href="#contact" class="block px-2 py-2 rounded hover:bg-gray-50">Contact Us</a></li>
-            <li><button data-open-quote class="w-full text-left px-2 py-2 rounded bg-gradient-to-r from-copper-400 to-copper-600 text-white font-medium">Get a Free Estimate</button></li>
+<li><button data-open-quote data-accent class="w-full text-left px-2 py-2 rounded text-white font-medium shadow-accent" style="background: linear-gradient(to right, var(--accent-from), var(--accent-to));">Get a Free Estimate</button></li>
           </ul>
         </div>
       </div>
@@ -100,10 +100,10 @@
     <!-- Hero -->
     <section id="home" class="relative">
       <div class="relative">
-        <img src="./assets/img/hero.JPG" alt="Stone-coated roof tiles on modern home" class="h-[70vh] w-full object-cover" />
+<img src="./assets/img/hero.JPG" alt="Stone-coated roof tiles on modern home" class="h-[72vh] md:h-[78vh] w-full object-cover" />
         <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60"></div>
         <div class="absolute inset-0">
-          <div class="container h-full flex items-center">
+<div class="container max-w-screen-2xl h-full flex items-center">
             <div class="max-w-2xl text-white" data-animate>
               <h1 class="font-heading text-3xl md:text-5xl font-extrabold leading-tight">
                 Your Best Roofing Services company in Ghana
@@ -116,7 +116,7 @@
                 <a href="#services" class="inline-flex items-center gap-2 rounded-md bg-white/95 px-5 py-3 font-medium text-charcoal hover:bg-white">
                   View Our Services
                 </a>
-                <button data-open-quote class="inline-flex items-center gap-2 rounded-md bg-gradient-to-r from-copper-400 to-copper-600 px-5 py-3 font-medium text-white shadow-copper hover:opacity-95">
+<button data-open-quote data-accent class="inline-flex items-center gap-2 rounded-md px-5 py-3 font-medium text-white shadow-accent hover:opacity-95" style="background: linear-gradient(to right, var(--accent-from), var(--accent-to));">
                   Get a Free Estimate
                 </button>
               </div>
@@ -124,8 +124,20 @@
           </div>
         </div>
       </div>
+      <!-- Accent wave divider -->
+      <div class="relative -mt-px" aria-hidden="true">
+        <svg class="block w-full h-16 md:h-24" viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="hero-divider" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0%" style="stop-color: var(--accent-from);"></stop>
+              <stop offset="100%" style="stop-color: var(--accent-to);"></stop>
+            </linearGradient>
+          </defs>
+          <path d="M0,0 C300,120 1140,0 1440,100 L1440,0 L0,0 Z" fill="url(#hero-divider)"></path>
+        </svg>
+      </div>
       <div class="bg-white border-b border-gray-100">
-        <div class="container py-6">
+<div class="container max-w-screen-2xl py-6">
           <div class="flex flex-wrap items-center justify-between gap-6" data-animate>
             <div class="flex items-center gap-3">
               <span class="h-8 w-8 rounded-full bg-gradient-to-br from-copper-400 to-copper-600"></span>
@@ -146,8 +158,8 @@
     </section>
 
     <!-- About preview -->
-    <section id="about" class="container py-16 md:py-24">
-      <div class="grid gap-10 md:grid-cols-2 items-center">
+<section id="about" class="container max-w-screen-2xl py-20 md:py-28 scroll-mt-24">
+<div class="grid gap-10 lg:gap-12 md:grid-cols-2 items-center">
         <div data-animate>
           <h2 class="font-heading text-2xl md:text-3xl">Elevate Your Home with Timeless Roofs</h2>
           <p class="mt-4 text-gray-700 leading-relaxed">
@@ -170,47 +182,48 @@
     </section>
 
     <!-- Product Highlights -->
-    <section id="products" class="bg-gray-50 py-16 md:py-24">
-      <div class="container">
+<section id="products" class="relative bg-gray-50 py-20 md:py-28 scroll-mt-24">
+<div class="absolute inset-0 opacity-[0.06] pointer-events-none bg-grid-accent"></div>
+      <div class="container relative max-w-screen-2xl">
         <div class="text-center max-w-2xl mx-auto" data-animate>
           <h2 class="font-heading text-2xl md:text-3xl">Ferroof Tile Profiles</h2>
           <p class="mt-3 text-gray-700">Popular options include Classic, Bond, Shake, and Roman. Explore finishes in charcoal, deep green, and copper-inspired tones.</p>
         </div>
-        <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+<div class="mt-10 grid gap-6 xl:gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <!-- Card -->
-          <article class="group rounded-lg bg-white shadow-sm ring-1 ring-gray-200 hover:shadow-md transition" data-animate>
+<article class="group rounded-xl bg-white shadow-md ring-1 ring-gray-200/70 hover:shadow-lg transition" data-animate>
             <img src="./assets/img/project-3.JPG" alt="Classic roof tile profile" class="h-40 w-full rounded-t-lg object-cover" />
-            <div class="p-4">
+<div class="p-5">
               <h3 class="font-heading">Classic</h3>
               <p class="mt-1 text-sm text-gray-600">Timeless look blending with modern and traditional homes.</p>
-              <button data-open-quote class="mt-4 w-full rounded-md bg-gradient-to-r from-copper-400 to-copper-600 px-4 py-2 text-white font-medium">Request Quote</button>
+              <button data-open-quote data-accent class="mt-4 w-full rounded-md px-4 py-2 text-white font-medium shadow-accent" style="background: linear-gradient(to right, var(--accent-from), var(--accent-to));">Request Quote</button>
             </div>
           </article>
           <!-- Card -->
-          <article class="group rounded-lg bg-white shadow-sm ring-1 ring-gray-200 hover:shadow-md transition" data-animate>
+<article class="group rounded-xl bg-white shadow-md ring-1 ring-gray-200/70 hover:shadow-lg transition" data-animate>
             <img src="./assets/img/product-bond.jpg" alt="Bond roof tile profile" class="h-40 w-full rounded-t-lg object-cover" />
-            <div class="p-4">
+<div class="p-5">
               <h3 class="font-heading">Bond</h3>
               <p class="mt-1 text-sm text-gray-600">Strong visual rhythm with excellent weather protection.</p>
-              <button data-open-quote class="mt-4 w-full rounded-md bg-gradient-to-r from-copper-400 to-copper-600 px-4 py-2 text-white font-medium">Request Quote</button>
+<button data-open-quote data-accent class="mt-4 w-full rounded-md px-4 py-2 text-white font-medium shadow-accent" style="background: linear-gradient(to right, var(--accent-from), var(--accent-to));">Request Quote</button>
             </div>
           </article>
           <!-- Card -->
-          <article class="group rounded-lg bg-white shadow-sm ring-1 ring-gray-200 hover:shadow-md transition" data-animate>
+<article class="group rounded-xl bg-white shadow-md ring-1 ring-gray-200/70 hover:shadow-lg transition" data-animate>
             <img src="./assets/img/product-shake.jpg" alt="Shake roof tile profile" class="h-40 w-full rounded-t-lg object-cover" />
-            <div class="p-4">
+<div class="p-5">
               <h3 class="font-heading">Shake</h3>
               <p class="mt-1 text-sm text-gray-600">Natural texture with modern performance.</p>
-              <button data-open-quote class="mt-4 w-full rounded-md bg-gradient-to-r from-copper-400 to-copper-600 px-4 py-2 text-white font-medium">Request Quote</button>
+<button data-open-quote data-accent class="mt-4 w-full rounded-md px-4 py-2 text-white font-medium shadow-accent" style="background: linear-gradient(to right, var(--accent-from), var(--accent-to));">Request Quote</button>
             </div>
           </article>
           <!-- Card -->
-          <article class="group rounded-lg bg-white shadow-sm ring-1 ring-gray-200 hover:shadow-md transition" data-animate>
+<article class="group rounded-xl bg-white shadow-md ring-1 ring-gray-200/70 hover:shadow-lg transition" data-animate>
             <img src="./assets/img/project-2.JPG" alt="Roman roof tile profile" class="h-40 w-full rounded-t-lg object-cover" />
-            <div class="p-4">
+<div class="p-5">
               <h3 class="font-heading">Roman</h3>
               <p class="mt-1 text-sm text-gray-600">Elegant curve with standout curb appeal.</p>
-              <button data-open-quote class="mt-4 w-full rounded-md bg-gradient-to-r from-copper-400 to-copper-600 px-4 py-2 text-white font-medium">Request Quote</button>
+<button data-open-quote data-accent class="mt-4 w-full rounded-md px-4 py-2 text-white font-medium shadow-accent" style="background: linear-gradient(to right, var(--accent-from), var(--accent-to));">Request Quote</button>
             </div>
           </article>
         </div>
@@ -218,21 +231,21 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="container py-16 md:py-24">
+<section class="container max-w-screen-2xl py-20 md:py-28 scroll-mt-24">
       <div class="text-center max-w-2xl mx-auto" data-animate>
         <h2 class="font-heading text-2xl md:text-3xl">What Our Clients Say</h2>
         <p class="mt-3 text-gray-700">Real feedback from customers and partners.</p>
       </div>
-      <div class="mt-10 grid gap-6 md:grid-cols-3">
-        <figure class="rounded-lg border border-gray-200 p-6" data-animate>
+<div class="mt-10 grid gap-6 xl:gap-8 md:grid-cols-3">
+<figure class="rounded-xl border border-gray-200/70 p-6 shadow-sm hover:shadow-md transition" data-animate>
           <blockquote class="text-gray-700">“As a contractor, I've relied on White Temple Agencies for many residential projects. Their Feroof tiles are durable with great color variety and a long warranty. Highly recommend.”</blockquote>
           <figcaption class="mt-3 text-sm text-gray-500">— Ibrahim Atubiga, Building Contractor</figcaption>
         </figure>
-        <figure class="rounded-lg border border-gray-200 p-6" data-animate>
+<figure class="rounded-xl border border-gray-200/70 p-6 shadow-sm hover:shadow-md transition" data-animate>
           <blockquote class="text-gray-700">“We’ve used White Temple Agencies for years. From Feroof roofing tiles to security doors, their quality and selection are excellent.”</blockquote>
           <figcaption class="mt-3 text-sm text-gray-500">— Alicia Porter, Facilities Manager</figcaption>
         </figure>
-        <figure class="rounded-lg border border-gray-200 p-6" data-animate>
+<figure class="rounded-xl border border-gray-200/70 p-6 shadow-sm hover:shadow-md transition" data-animate>
           <blockquote class="text-gray-700">“They were professional and efficient from consultation to final inspection. Helped me choose the best roofing option for my home.”</blockquote>
           <figcaption class="mt-3 text-sm text-gray-500">— Susanna Boafo, Song Writer</figcaption>
         </figure>
@@ -240,13 +253,13 @@
     </section>
 
     <!-- Services preview -->
-    <section id="services" class="bg-gray-50 py-16 md:py-24">
-      <div class="container">
+<section id="services" class="bg-gray-50 py-20 md:py-28 scroll-mt-24">
+<div class="container max-w-screen-2xl">
         <div class="text-center max-w-2xl mx-auto" data-animate>
           <h2 class="font-heading text-2xl md:3xl">Services</h2>
           <p class="mt-3 text-gray-700">From consultation to supply, installation (if applicable), and maintenance support.</p>
         </div>
-        <div class="mt-10 grid gap-6 md:grid-cols-4">
+<div class="mt-10 grid gap-6 xl:gap-8 md:grid-cols-4">
           <article class="rounded-lg bg-white ring-1 ring-gray-200 overflow-hidden" data-animate>
             <img src="./assets/img/project-1.JPG" alt="Residential roofing with stone-coated tiles" class="h-40 w-full object-cover" />
             <div class="p-6">
@@ -280,13 +293,13 @@
     </section>
 
     <!-- Why Choose Us -->
-    <section id="why" class="container py-16 md:py-24">
+<section id="why" class="container max-w-screen-2xl py-20 md:py-28 scroll-mt-24">
       <div class="text-center max-w-2xl mx-auto" data-animate>
         <h2 class="font-heading text-2xl md:text-3xl">Why Choose Us</h2>
         <p class="mt-3 text-gray-700">With over 30 years in the building industry, we’ve built a reputation for quality and customer satisfaction.</p>
       </div>
-      <div class="mt-10 grid gap-6 md:grid-cols-3">
-        <div class="rounded-lg bg-white p-6 ring-1 ring-gray-200" data-animate>
+<div class="mt-10 grid gap-6 lg:gap-8 md:grid-cols-3">
+<div class="rounded-xl bg-white p-6 ring-1 ring-gray-200/70 shadow-sm" data-animate>
           <h3 class="font-heading">Qualified Expert</h3>
           <p class="mt-2 text-gray-700">Our skilled professionals take meticulous pride in installations, delivering flawless results you can trust.</p>
         </div>
@@ -320,8 +333,8 @@
     </section>
 
     <!-- Contact CTA + Quote form (inline) -->
-    <section id="quote" class="container py-16 md:py-24">
-      <div class="grid gap-8 md:grid-cols-2 items-center">
+<section id="quote" class="container max-w-screen-2xl py-20 md:py-28 scroll-mt-24">
+<div class="grid gap-10 md:grid-cols-2 items-center">
         <div data-animate>
           <h2 class="font-heading text-2xl md:text-3xl">Need A Free Estimate?</h2>
           <p class="mt-3 text-gray-700">Visit our showroom today to see the products we have for you! White Temple Agencies Limited is located at Plot # 65, Derby Avenue, Accra, Ghana. Open 8:00AM–5:00PM (Mon–Fri) and 8:00AM–3:00PM (Sat).</p>
@@ -332,7 +345,7 @@
             <li>Office: No: 65 Derby Avenue, Accra</li>
           </ul>
         </div>
-        <form id="quote-form" class="rounded-lg border border-gray-200 p-6 bg-white" novalidate data-animate>
+        <form id="quote-form" class="rounded-xl border border-gray-200/70 p-7 bg-white shadow-sm" novalidate data-animate>
           <div class="grid gap-4">
             <div>
               <label class="block text-sm text-gray-700">Name</label>
@@ -356,7 +369,7 @@
               <label class="block text-sm text-gray-700">Message</label>
               <textarea name="message" rows="4" required class="mt-1 w-full rounded-md border-gray-300 focus:border-copper-500 focus:ring-copper-500"></textarea>
             </div>
-            <button type="submit" class="inline-flex justify-center rounded-md bg-gradient-to-r from-copper-400 to-copper-600 px-5 py-3 font-medium text-white shadow-copper">Send Request</button>
+<button type="submit" data-accent class="inline-flex justify-center rounded-md px-5 py-3 font-medium text-white shadow-accent" style="background: linear-gradient(to right, var(--accent-from), var(--accent-to));">Send Request</button>
             <p id="quote-status" class="text-sm"></p>
           </div>
         </form>
@@ -364,11 +377,11 @@
     </section>
 
     <!-- Gallery preview -->
-    <section id="projects" class="bg-gray-50 py-16 md:py-24">
-      <div class="container" data-animate>
+<section id="projects" class="bg-gray-50 py-20 md:py-28 scroll-mt-24">
+      <div class="container max-w-screen-2xl" data-animate>
         <h2 class="font-heading text-2xl md:text-3xl text-center">Projects</h2>
         <p class="mt-3 text-gray-700 text-center">Real projects and roof close-ups. Replace with your own photos.</p>
-        <div class="mt-8 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+<div class="mt-8 grid gap-5 sm:grid-cols-2 md:grid-cols-3">
           <img class="rounded-lg object-cover h-48 w-full" src="./assets/img/project-1.JPG" alt="Roofing installation with stone-coated tiles" />
           <img class="rounded-lg object-cover h-48 w-full" src="./assets/img/product-bond.jpg" alt="Completed home roof with stone-coated tiles" />
           <img class="rounded-lg object-cover h-48 w-full" src="./assets/img/product-shake.jpg" alt="Close-up of roof tiles" />
@@ -378,11 +391,11 @@
 
     <!-- Footer -->
     <footer id="contact" class="border-t border-gray-100">
-      <div class="container py-12">
+<div class="container max-w-screen-2xl py-14">
         <div class="grid gap-8 md:grid-cols-4">
           <div>
-            <div class="flex items-center gap-2">
-              <span class="inline-block h-3 w-3 rounded-full bg-gradient-to-br from-copper-400 to-copper-600"></span>
+            <div class="flex items-center gap-3">
+<img src="./docs/white_temple_logo.png" alt="White Temple Agencies logo" class="h-12 w-auto object-contain" />
               <span class="font-heading text-lg">White Temple Agencies Limited</span>
             </div>
             <p class="mt-3 text-sm text-gray-600">Authorized reseller of Ferroof roofing tiles in Ghana.</p>
@@ -407,8 +420,7 @@
             </ul>
             <div class="mt-4 flex items-center gap-3 text-gray-500">
               <!-- Social icons -->
-              <a href="#" aria-label="Facebook" class="hover:text-deepgreen"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 9H15V7h-1.5C12.57 7 12 7.57 12 8.5V10H10v2h2v6h2v-6h1.5l.5-2H14v-1c0-.28.22-.5.5-.5z"/></svg></a>
-              <a href="#" aria-label="Instagram" class="hover:text-deepgreen"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm5.5-.75a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0z"/></svg></a>
+              <a href="https://web.facebook.com/whitetempleagencies" aria-label="Facebook" target="_blank" rel="noopener" class="hover:text-deepgreen"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 9H15V7h-1.5C12.57 7 12 7.57 12 8.5V10H10v2h2v6h2v-6h1.5l.5-2H14v-1c0-.28.22-.5.5-.5z"/></svg></a>
               <a href="https://wa.me/233243284859" aria-label="WhatsApp" target="_blank" rel="noopener" class="hover:text-deepgreen"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.94 11.94 0 0012.01 0C5.39 0 .01 5.38.01 12c0 2.11.55 4.18 1.6 6.01L0 24l6.17-1.6A11.95 11.95 0 0012 24c6.62 0 12-5.38 12-12 0-3.2-1.25-6.2-3.48-8.52zM12 22a9.9 9.9 0 01-5.06-1.42l-.36-.21-3.64.94.97-3.55-.23-.37A9.88 9.88 0 012 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm5.2-7.54c-.29-.14-1.7-.84-1.96-.93-.26-.1-.45-.14-.64.14-.19.29-.74.93-.91 1.12-.17.19-.34.22-.63.08-.29-.14-1.22-.45-2.33-1.43-.86-.77-1.43-1.72-1.6-2-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.08-.14-.64-1.55-.88-2.12-.23-.55-.47-.48-.64-.49h-.55c-.19 0-.48.07-.74.36-.26.29-1 1-.99 2.45 0 1.45 1.03 2.86 1.17 3.06.14.19 2.03 3.1 4.92 4.35.69.3 1.23.48 1.65.62.69.22 1.32.19 1.82.12.55-.08 1.7-.69 1.94-1.35.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.33z"/></svg></a>
             </div>
           </div>
@@ -450,7 +462,7 @@
             </div>
             <input type="text" name="subject" placeholder="Subject" class="w-full rounded-md border-gray-300 focus:border-copper-500 focus:ring-copper-500" />
             <textarea name="message" rows="4" placeholder="Tell us about your project" required class="w-full rounded-md border-gray-300 focus:border-copper-500 focus:ring-copper-500"></textarea>
-            <button type="submit" class="inline-flex justify-center rounded-md bg-gradient-to-r from-copper-400 to-copper-600 px-5 py-3 font-medium text-white shadow-copper">Send Request</button>
+            <button type="submit" data-accent class="inline-flex justify-center rounded-md px-5 py-3 font-medium text-white shadow-accent" style="background: linear-gradient(to right, var(--accent-from), var(--accent-to));">Send Request</button>
             <p id="quote-status-modal" class="text-sm"></p>
           </form>
         </div>

@@ -1,5 +1,12 @@
 /* White Temple Agency custom styles */
 
+:root {
+  /* Default accent colors (overridden at runtime to match logo) */
+  --accent-from: #ca8a5d;
+  --accent-to: #8c5a2f;
+  --accent-shadow: rgba(184, 115, 51, 0.25);
+}
+
 /* Fallback smooth scroll for browsers not honoring scroll-smooth */
 html { scroll-behavior: smooth; }
 
@@ -9,7 +16,38 @@ html { scroll-behavior: smooth; }
 
 /* Copper underlines for headings */
 .heading-accent { position: relative; display: inline-block; }
-.heading-accent::after { content: ""; position: absolute; left: 0; bottom: -6px; width: 48px; height: 3px; background: linear-gradient(90deg, #ca8a5d, #b87333, #8c5a2f); border-radius: 9999px; }
+.heading-accent::after { content: ""; position: absolute; left: 0; bottom: -6px; width: 48px; height: 3px; background: linear-gradient(90deg, var(--accent-from), var(--accent-to)); border-radius: 9999px; }
 
-/* Minor tweaks */
+/* Accent shadow helper */
+.shadow-accent { box-shadow: 0 10px 25px var(--accent-shadow) !important; }
+/* Legacy copper shadow for fallback */
 .shadow-copper { box-shadow: 0 10px 25px rgba(184, 115, 51, 0.25) !important; }
+
+/* Subtle grid background using accent shadow color */
+.bg-grid-accent {
+  background-image: radial-gradient(circle at 1px 1px, var(--accent-shadow) 1px, transparent 1.5px);
+  background-size: 22px 22px;
+}
+
+/* Form fields: clearer outline and placeholder visibility */
+#quote-form input,
+#quote-form textarea,
+#quote-form-modal input,
+#quote-form-modal textarea {
+  border: 1.5px solid #e5e7eb; /* gray-200 */
+  background: #ffffff;
+}
+#quote-form input::placeholder,
+#quote-form textarea::placeholder,
+#quote-form-modal input::placeholder,
+#quote-form-modal textarea::placeholder {
+  color: #9ca3af; /* gray-400 */
+}
+#quote-form input:focus,
+#quote-form textarea:focus,
+#quote-form-modal input:focus,
+#quote-form-modal textarea:focus {
+  outline: none;
+  border-color: var(--accent-to);
+  box-shadow: 0 0 0 3px var(--accent-shadow);
+}

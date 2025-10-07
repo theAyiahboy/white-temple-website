@@ -69,4 +69,58 @@
   handleQuoteForm($('#quote-form'), $('#quote-status'));
   handleQuoteForm($('#quote-form-modal'), $('#quote-status-modal'));
 
+  // Accent color extraction from logo -> sets CSS variables used by [data-accent]
+  try {
+    const logoSrc = './docs/white_temple_logo.png';
+    const img = new Image();
+    img.onload = () => {
+      try {
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d', { willReadFrequently: true });
+        const w = 64, h = 64;
+        canvas.width = w; canvas.height = h;
+        ctx.drawImage(img, 0, 0, w, h);
+        const { data } = ctx.getImageData(0, 0, w, h);
+        const bins = new Map();
+        for (let i = 0; i < data.length; i += 4) {
+          const r = data[i], g = data[i+1], b = data[i+2], a = data[i+3];
+          if (a < 128) continue; // ignore transparent
+          // ignore near-white/near-black pixels
+          if ((r > 245 && g > 245 && b > 245) || (r < 10 && g < 10 && b < 10)) continue;
+          const qr = r >> 5, qg = g >> 5, qb = b >> 5; // 0..7
+          const key = (qr << 10) | (qg << 5) | qb;
+          let o = bins.get(key);
+          if (!o) { o = { count: 0, r: 0, g: 0, b: 0 }; bins.set(key, o); }
+          o.count++; o.r += r; o.g += g; o.b += b;
+        }
+        const arr = Array.from(bins.values()).sort((a, b) => b.count - a.count);
+        if (arr.length) {
+          const top = arr[0];
+          const pr = Math.round(top.r / top.count);
+          const pg = Math.round(top.g / top.count);
+          const pb = Math.round(top.b / top.count);
+          const primary = `rgb(${pr}, ${pg}, ${pb})`;
+          const lighten = (r, g, b, amt=0.25) => {
+            const lr = Math.round(r + (255 - r) * amt);
+            const lg = Math.round(g + (255 - g) * amt);
+            const lb = Math.round(b + (255 - b) * amt);
+            return `rgb(${lr}, ${lg}, ${lb})`;
+          };
+          const from = lighten(pr, pg, pb, 0.35);
+          document.documentElement.style.setProperty('--accent-to', primary);
+          document.documentElement.style.setProperty('--accent-from', from);
+          document.documentElement.style.setProperty('--accent-shadow', `rgba(${pr}, ${pg}, ${pb}, 0.25)`);
+          // Re-apply to accent-marked elements
+          $$('[data-accent]').forEach(el => {
+            el.style.background = 'linear-gradient(to right, var(--accent-from), var(--accent-to))';
+            if (el.classList.contains('shadow-accent')) {
+              el.style.boxShadow = '0 10px 25px var(--accent-shadow)';
+            }
+          });
+        }
+      } catch (e) { /* ignore */ }
+    };
+    img.src = logoSrc;
+  } catch (e) { /* ignore */ }
+
 })();
