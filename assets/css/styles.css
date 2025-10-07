@@ -1,0 +1,15 @@
+/* White Temple Agency custom styles */
+
+/* Fallback smooth scroll for browsers not honoring scroll-smooth */
+html { scroll-behavior: smooth; }
+
+/* Utility to opt-in animated reveal using JS */
+[data-animate] { opacity: 0; transform: translateY(12px); transition: opacity 700ms ease, transform 700ms ease; will-change: opacity, transform; }
+[data-animate].in-view { opacity: 1; transform: translateY(0); }
+
+/* Copper underlines for headings */
+.heading-accent { position: relative; display: inline-block; }
+.heading-accent::after { content: ""; position: absolute; left: 0; bottom: -6px; width: 48px; height: 3px; background: linear-gradient(90deg, #ca8a5d, #b87333, #8c5a2f); border-radius: 9999px; }
+
+/* Minor tweaks */
+.shadow-copper { box-shadow: 0 10px 25px rgba(184, 115, 51, 0.25) !important; }

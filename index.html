@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>White Temple Agencies — Roofing Company in Ghana | Feroof Stone Coated Roof Tiles</title>
+    <meta name="description" content="White Temple Agencies Limited — Leading roofing company in Ghana. Exclusive distributor of Feroof Stone Coated Roof Tiles. 24/7 emergency service. Free estimates." />
+    <meta name="theme-color" content="#1f2937" />
+
+    <!-- Open Graph (fill real URLs when available) -->
+    <meta property="og:title" content="White Temple Agencies — Roofing Company in Ghana | Feroof Stone Coated Roof Tiles" />
+    <meta property="og:description" content="Exclusive distributors of Feroof Stone Coated Roof Tiles in Ghana. Get a free estimate today." />
+    <meta property="og:type" content="website" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind (Play CDN for rapid prototyping) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              charcoal: '#1f2937',
+              deepgreen: '#064e3b',
+              copper: {
+                400: '#ca8a5d',
+                500: '#b87333',
+                600: '#8c5a2f'
+              }
+            },
+            fontFamily: {
+              heading: ['Montserrat', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+              body: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+            },
+            container: { center: true, padding: '1rem' },
+            boxShadow: { copper: '0 10px 25px rgba(184, 115, 51, 0.25)' }
+          }
+        }
+      };
+    </script>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body class="font-body text-charcoal bg-white scroll-smooth">
+    <!-- Top contact bar (placeholders; replace with real info) -->
+    <div class="bg-charcoal text-white text-sm">
+      <div class="container flex flex-col md:flex-row md:items-center md:justify-between gap-1 py-2">
+        <div class="flex flex-wrap items-center gap-4">
+          <span class="opacity-90">No: 65 Derby Avenue, Accra <span class="hidden sm:inline">(Near Arena Lorry Park)</span></span>
+          <span class="opacity-90">Phone: <span class="font-medium">024 328 4859</span> · <span class="font-medium">050 158 1628</span></span>
+          <a href="https://wa.me/233243284859" target="_blank" rel="noopener" class="opacity-90 hover:opacity-100 underline">WhatsApp</a>
+        </div>
+        <div class="text-xs opacity-80">24/7 Emergency Roofing Service · Authorized Reseller of Feroof</div>
+      </div>
+    </div>
+
+    <!-- Header / Nav -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-gray-100">
+      <nav class="container flex items-center justify-between py-4">
+        <a href="#home" class="flex items-center gap-2 group">
+          <span class="inline-block h-3 w-3 rounded-full bg-gradient-to-br from-copper-400 to-copper-600 shadow-copper"></span>
+          <span class="font-heading text-lg md:text-xl tracking-wide">White Temple Agencies</span>
+        </a>
+        <button id="mobile-nav-toggle" class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-charcoal hover:bg-gray-100 focus:outline-none" aria-label="Open menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>
+        </button>
+        <ul id="desktop-menu" class="hidden md:flex items-center gap-8">
+          <li><a href="#home" class="hover:text-deepgreen">Home</a></li>
+          <li><a href="#about" class="hover:text-deepgreen">About Us</a></li>
+          <li><a href="#services" class="hover:text-deepgreen">Services</a></li>
+          <li><a href="#projects" class="hover:text-deepgreen">Projects</a></li>
+          <li><a href="#contact" class="hover:text-deepgreen">Contact Us</a></li>
+          <li>
+            <button data-open-quote class="inline-flex items-center gap-2 rounded-md bg-gradient-to-r from-copper-400 to-copper-600 px-4 py-2 font-medium text-white shadow-copper hover:opacity-95">
+              <span>Get a Free Estimate</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden border-t border-gray-100">
+        <div class="container py-3">
+          <ul class="grid gap-2">
+            <li><a href="#home" class="block px-2 py-2 rounded hover:bg-gray-50">Home</a></li>
+            <li><a href="#about" class="block px-2 py-2 rounded hover:bg-gray-50">About Us</a></li>
+            <li><a href="#services" class="block px-2 py-2 rounded hover:bg-gray-50">Services</a></li>
+            <li><a href="#projects" class="block px-2 py-2 rounded hover:bg-gray-50">Projects</a></li>
+            <li><a href="#contact" class="block px-2 py-2 rounded hover:bg-gray-50">Contact Us</a></li>
+            <li><button data-open-quote class="w-full text-left px-2 py-2 rounded bg-gradient-to-r from-copper-400 to-copper-600 text-white font-medium">Get a Free Estimate</button></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="relative">
+      <div class="relative">
+        <img src="./assets/img/hero.JPG" alt="Stone-coated roof tiles on modern home" class="h-[70vh] w-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60"></div>
+        <div class="absolute inset-0">
+          <div class="container h-full flex items-center">
+            <div class="max-w-2xl text-white" data-animate>
+              <h1 class="font-heading text-3xl md:text-5xl font-extrabold leading-tight">
+                Your Best Roofing Services company in Ghana
+              </h1>
+              <h2 class="font-heading text-2xl md:text-4xl mt-2">Leading Roofing Company in Ghana</h2>
+              <p class="mt-4 text-base md:text-lg opacity-95">
+                Tired of leaky roofs and fading shingles? White Temple Agencies, a leading Ghanaian roofing company with over 30 years of experience, offers the perfect solution: Feroof Stone Coated Roof Tiles.
+              </p>
+              <div class="mt-6 flex flex-wrap gap-3">
+                <a href="#services" class="inline-flex items-center gap-2 rounded-md bg-white/95 px-5 py-3 font-medium text-charcoal hover:bg-white">
+                  View Our Services
+                </a>
+                <button data-open-quote class="inline-flex items-center gap-2 rounded-md bg-gradient-to-r from-copper-400 to-copper-600 px-5 py-3 font-medium text-white shadow-copper hover:opacity-95">
+                  Get a Free Estimate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white border-b border-gray-100">
+        <div class="container py-6">
+          <div class="flex flex-wrap items-center justify-between gap-6" data-animate>
+            <div class="flex items-center gap-3">
+              <span class="h-8 w-8 rounded-full bg-gradient-to-br from-copper-400 to-copper-600"></span>
+              <div>
+                <div class="text-sm uppercase tracking-wide text-gray-500">Partnered With</div>
+                <div class="font-heading text-lg">Feroof International</div>
+              </div>
+            </div>
+            <ul class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm text-gray-600">
+              <li class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-deepgreen"></span> Weather-resistant</li>
+              <li class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-deepgreen"></span> Durable & long-lasting</li>
+              <li class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-deepgreen"></span> Elegant finishes</li>
+              <li class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-deepgreen"></span> Warranty-backed</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About preview -->
+    <section id="about" class="container py-16 md:py-24">
+      <div class="grid gap-10 md:grid-cols-2 items-center">
+        <div data-animate>
+          <h2 class="font-heading text-2xl md:text-3xl">Elevate Your Home with Timeless Roofs</h2>
+          <p class="mt-4 text-gray-700 leading-relaxed">
+            Transform Your Home with Feroof Stone Coated Roof Tiles – Unmatched Quality and Durability.
+          </p>
+          <p class="mt-4 text-gray-700 leading-relaxed">
+            Welcome to White Temple Agencies, your premier destination for top-notch roofing solutions in Ghana!
+          </p>
+          <p class="mt-4 text-gray-700 leading-relaxed">
+            At White Temple Agencies, we take immense pride in being the leading roofing company in the heart of Ghana. As the exclusive distributors of Feroof Stone Coated Roof Tiles, we bring you unparalleled elegance and durability for your home. With Feroof, you’re not just investing in a roof; you’re investing in peace of mind that lasts a lifetime.
+          </p>
+          <div class="mt-6">
+            <a href="#services" class="inline-flex items-center gap-2 rounded-md border border-copper-500 px-4 py-2 text-copper-600 hover:bg-copper-50">Learn More</a>
+          </div>
+        </div>
+        <div class="relative" data-animate>
+          <img src="./assets/img/project-1.JPG" alt="Close-up of stone-coated roof tiles" class="rounded-lg shadow-lg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Highlights -->
+    <section id="products" class="bg-gray-50 py-16 md:py-24">
+      <div class="container">
+        <div class="text-center max-w-2xl mx-auto" data-animate>
+          <h2 class="font-heading text-2xl md:text-3xl">Ferroof Tile Profiles</h2>
+          <p class="mt-3 text-gray-700">Popular options include Classic, Bond, Shake, and Roman. Explore finishes in charcoal, deep green, and copper-inspired tones.</p>
+        </div>
+        <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <!-- Card -->
+          <article class="group rounded-lg bg-white shadow-sm ring-1 ring-gray-200 hover:shadow-md transition" data-animate>
+            <img src="./assets/img/project-3.JPG" alt="Classic roof tile profile" class="h-40 w-full rounded-t-lg object-cover" />
+            <div class="p-4">
+              <h3 class="font-heading">Classic</h3>
+              <p class="mt-1 text-sm text-gray-600">Timeless look blending with modern and traditional homes.</p>
+              <button data-open-quote class="mt-4 w-full rounded-md bg-gradient-to-r from-copper-400 to-copper-600 px-4 py-2 text-white font-medium">Request Quote</button>
+            </div>
+          </article>
+          <!-- Card -->
+          <article class="group rounded-lg bg-white shadow-sm ring-1 ring-gray-200 hover:shadow-md transition" data-animate>
+            <img src="./assets/img/product-bond.jpg" alt="Bond roof tile profile" class="h-40 w-full rounded-t-lg object-cover" />
+            <div class="p-4">
+              <h3 class="font-heading">Bond</h3>
+              <p class="mt-1 text-sm text-gray-600">Strong visual rhythm with excellent weather protection.</p>
+              <button data-open-quote class="mt-4 w-full rounded-md bg-gradient-to-r from-copper-400 to-copper-600 px-4 py-2 text-white font-medium">Request Quote</button>
+            </div>
+          </article>
+          <!-- Card -->
+          <article class="group rounded-lg bg-white shadow-sm ring-1 ring-gray-200 hover:shadow-md transition" data-animate>
+            <img src="./assets/img/product-shake.jpg" alt="Shake roof tile profile" class="h-40 w-full rounded-t-lg object-cover" />
+            <div class="p-4">
+              <h3 class="font-heading">Shake</h3>
+              <p class="mt-1 text-sm text-gray-600">Natural texture with modern performance.</p>
+              <button data-open-quote class="mt-4 w-full rounded-md bg-gradient-to-r from-copper-400 to-copper-600 px-4 py-2 text-white font-medium">Request Quote</button>
+            </div>
+          </article>
+          <!-- Card -->
+          <article class="group rounded-lg bg-white shadow-sm ring-1 ring-gray-200 hover:shadow-md transition" data-animate>
+            <img src="./assets/img/project-2.JPG" alt="Roman roof tile profile" class="h-40 w-full rounded-t-lg object-cover" />
+            <div class="p-4">
+              <h3 class="font-heading">Roman</h3>
+              <p class="mt-1 text-sm text-gray-600">Elegant curve with standout curb appeal.</p>
+              <button data-open-quote class="mt-4 w-full rounded-md bg-gradient-to-r from-copper-400 to-copper-600 px-4 py-2 text-white font-medium">Request Quote</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="container py-16 md:py-24">
+      <div class="text-center max-w-2xl mx-auto" data-animate>
+        <h2 class="font-heading text-2xl md:text-3xl">What Our Clients Say</h2>
+        <p class="mt-3 text-gray-700">Real feedback from customers and partners.</p>
+      </div>
+      <div class="mt-10 grid gap-6 md:grid-cols-3">
+        <figure class="rounded-lg border border-gray-200 p-6" data-animate>
+          <blockquote class="text-gray-700">“As a contractor, I've relied on White Temple Agencies for many residential projects. Their Feroof tiles are durable with great color variety and a long warranty. Highly recommend.”</blockquote>
+          <figcaption class="mt-3 text-sm text-gray-500">— Ibrahim Atubiga, Building Contractor</figcaption>
+        </figure>
+        <figure class="rounded-lg border border-gray-200 p-6" data-animate>
+          <blockquote class="text-gray-700">“We’ve used White Temple Agencies for years. From Feroof roofing tiles to security doors, their quality and selection are excellent.”</blockquote>
+          <figcaption class="mt-3 text-sm text-gray-500">— Alicia Porter, Facilities Manager</figcaption>
+        </figure>
+        <figure class="rounded-lg border border-gray-200 p-6" data-animate>
+          <blockquote class="text-gray-700">“They were professional and efficient from consultation to final inspection. Helped me choose the best roofing option for my home.”</blockquote>
+          <figcaption class="mt-3 text-sm text-gray-500">— Susanna Boafo, Song Writer</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Services preview -->
+    <section id="services" class="bg-gray-50 py-16 md:py-24">
+      <div class="container">
+        <div class="text-center max-w-2xl mx-auto" data-animate>
+          <h2 class="font-heading text-2xl md:3xl">Services</h2>
+          <p class="mt-3 text-gray-700">From consultation to supply, installation (if applicable), and maintenance support.</p>
+        </div>
+        <div class="mt-10 grid gap-6 md:grid-cols-4">
+          <article class="rounded-lg bg-white ring-1 ring-gray-200 overflow-hidden" data-animate>
+            <img src="./assets/img/project-1.JPG" alt="Residential roofing with stone-coated tiles" class="h-40 w-full object-cover" />
+            <div class="p-6">
+              <h3 class="font-heading">Residential Roofing</h3>
+              <p class="mt-2 text-gray-700">Shield your home with the best! Feroof Stone Coated Roof Tiles offer exceptional protection and a 50-year warranty.</p>
+            </div>
+          </article>
+          <article class="rounded-lg bg-white ring-1 ring-gray-200 overflow-hidden" data-animate>
+            <img src="./assets/img/service-upvc.jpeg" alt="UPVC sliding doors and windows" class="h-40 w-full object-cover" />
+            <div class="p-6">
+              <h3 class="font-heading">UPVC Sliding Doors & Windows</h3>
+              <p class="mt-2 text-gray-700">High-quality fixtures that blend functionality and aesthetics for a modern, elegant finish.</p>
+            </div>
+          </article>
+          <article class="rounded-lg bg-white ring-1 ring-gray-200 overflow-hidden" data-animate>
+            <img src="./assets/img/service-temple-guard.jpg" alt="Temple Guard railings" class="h-40 w-full object-cover" />
+            <div class="p-6">
+              <h3 class="font-heading">Temple Guard</h3>
+              <p class="mt-2 text-gray-700">Guardrails that combine strength with style—enhance security and your home’s aesthetics.</p>
+            </div>
+          </article>
+          <article class="rounded-lg bg-white ring-1 ring-gray-200 overflow-hidden" data-animate>
+            <img src="./assets/img/service-turkish-door.jpeg" alt="Turkish security doors and locks" class="h-40 w-full object-cover" />
+            <div class="p-6">
+              <h3 class="font-heading">Turkish Security Doors & Locks</h3>
+              <p class="mt-2 text-gray-700">Durable, premium security doors for residential and commercial spaces.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why" class="container py-16 md:py-24">
+      <div class="text-center max-w-2xl mx-auto" data-animate>
+        <h2 class="font-heading text-2xl md:text-3xl">Why Choose Us</h2>
+        <p class="mt-3 text-gray-700">With over 30 years in the building industry, we’ve built a reputation for quality and customer satisfaction.</p>
+      </div>
+      <div class="mt-10 grid gap-6 md:grid-cols-3">
+        <div class="rounded-lg bg-white p-6 ring-1 ring-gray-200" data-animate>
+          <h3 class="font-heading">Qualified Expert</h3>
+          <p class="mt-2 text-gray-700">Our skilled professionals take meticulous pride in installations, delivering flawless results you can trust.</p>
+        </div>
+        <div class="rounded-lg bg-white p-6 ring-1 ring-gray-200" data-animate>
+          <h3 class="font-heading">Flexible Schedule</h3>
+          <p class="mt-2 text-gray-700">We’re available 24/7 to minimize disruptions and complete your project efficiently.</p>
+        </div>
+        <div class="rounded-lg bg-white p-6 ring-1 ring-gray-200" data-animate>
+          <h3 class="font-heading">Workmanship Quality</h3>
+          <p class="mt-2 text-gray-700">A timeless fusion of function and beauty—built to endure for years.</p>
+        </div>
+        <div class="rounded-lg bg-white p-6 ring-1 ring-gray-200" data-animate>
+          <h3 class="font-heading">Affordable Package</h3>
+          <p class="mt-2 text-gray-700">High-quality products that fit your budget, so you can create a space you’ll love.</p>
+        </div>
+        <div class="rounded-lg bg-white p-6 ring-1 ring-gray-200" data-animate>
+          <h3 class="font-heading">Quality Products</h3>
+          <p class="mt-2 text-gray-700">We offer only the finest materials to ensure lasting protection and beauty.</p>
+        </div>
+        <div class="rounded-lg bg-white p-6 ring-1 ring-gray-200" data-animate>
+          <h3 class="font-heading">Special Offer</h3>
+          <p class="mt-2 text-gray-700">This month only, enjoy a 15% discount on all roofing products. Visit our showroom for details.</p>
+        </div>
+      </div>
+      <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center" data-animate>
+        <div><div class="text-3xl font-heading">1280</div><div class="text-gray-600 mt-1">Commercial Projects</div></div>
+        <div><div class="text-3xl font-heading">1420</div><div class="text-gray-600 mt-1">Residential Projects</div></div>
+        <div><div class="text-3xl font-heading">100 +</div><div class="text-gray-600 mt-1">Hard Working Employees</div></div>
+        <div><div class="text-3xl font-heading">800</div><div class="text-gray-600 mt-1">Happy Customers</div></div>
+      </div>
+    </section>
+
+    <!-- Contact CTA + Quote form (inline) -->
+    <section id="quote" class="container py-16 md:py-24">
+      <div class="grid gap-8 md:grid-cols-2 items-center">
+        <div data-animate>
+          <h2 class="font-heading text-2xl md:text-3xl">Need A Free Estimate?</h2>
+          <p class="mt-3 text-gray-700">Visit our showroom today to see the products we have for you! White Temple Agencies Limited is located at Plot # 65, Derby Avenue, Accra, Ghana. Open 8:00AM–5:00PM (Mon–Fri) and 8:00AM–3:00PM (Sat).</p>
+          <ul class="mt-4 text-gray-700">
+            <li>Phone: 024 328 4859 | 050 158 1628</li>
+            <li>WhatsApp: +233 24 328 4859</li>
+            <li>Email: whitetemple4u2@gmail.com</li>
+            <li>Office: No: 65 Derby Avenue, Accra</li>
+          </ul>
+        </div>
+        <form id="quote-form" class="rounded-lg border border-gray-200 p-6 bg-white" novalidate data-animate>
+          <div class="grid gap-4">
+            <div>
+              <label class="block text-sm text-gray-700">Name</label>
+              <input type="text" name="name" required class="mt-1 w-full rounded-md border-gray-300 focus:border-copper-500 focus:ring-copper-500" />
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm text-gray-700">Email</label>
+                <input type="email" name="email" required class="mt-1 w-full rounded-md border-gray-300 focus:border-copper-500 focus:ring-copper-500" />
+              </div>
+              <div>
+                <label class="block text-sm text-gray-700">Phone</label>
+                <input type="tel" name="phone" required class="mt-1 w-full rounded-md border-gray-300 focus:border-copper-500 focus:ring-copper-500" />
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm text-gray-700">Subject</label>
+              <input type="text" name="subject" class="mt-1 w-full rounded-md border-gray-300 focus:border-copper-500 focus:ring-copper-500" />
+            </div>
+            <div>
+              <label class="block text-sm text-gray-700">Message</label>
+              <textarea name="message" rows="4" required class="mt-1 w-full rounded-md border-gray-300 focus:border-copper-500 focus:ring-copper-500"></textarea>
+            </div>
+            <button type="submit" class="inline-flex justify-center rounded-md bg-gradient-to-r from-copper-400 to-copper-600 px-5 py-3 font-medium text-white shadow-copper">Send Request</button>
+            <p id="quote-status" class="text-sm"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Gallery preview -->
+    <section id="projects" class="bg-gray-50 py-16 md:py-24">
+      <div class="container" data-animate>
+        <h2 class="font-heading text-2xl md:text-3xl text-center">Projects</h2>
+        <p class="mt-3 text-gray-700 text-center">Real projects and roof close-ups. Replace with your own photos.</p>
+        <div class="mt-8 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+          <img class="rounded-lg object-cover h-48 w-full" src="./assets/img/project-1.JPG" alt="Roofing installation with stone-coated tiles" />
+          <img class="rounded-lg object-cover h-48 w-full" src="./assets/img/product-bond.jpg" alt="Completed home roof with stone-coated tiles" />
+          <img class="rounded-lg object-cover h-48 w-full" src="./assets/img/product-shake.jpg" alt="Close-up of roof tiles" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="border-t border-gray-100">
+      <div class="container py-12">
+        <div class="grid gap-8 md:grid-cols-4">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="inline-block h-3 w-3 rounded-full bg-gradient-to-br from-copper-400 to-copper-600"></span>
+              <span class="font-heading text-lg">White Temple Agencies Limited</span>
+            </div>
+            <p class="mt-3 text-sm text-gray-600">Authorized reseller of Ferroof roofing tiles in Ghana.</p>
+          </div>
+          <div>
+            <h3 class="font-heading">Quick Links</h3>
+            <ul class="mt-3 space-y-2 text-sm text-gray-700">
+              <li><a href="#home" class="hover:text-deepgreen">Home</a></li>
+              <li><a href="#about" class="hover:text-deepgreen">About Us</a></li>
+              <li><a href="#services" class="hover:text-deepgreen">Services</a></li>
+              <li><a href="#projects" class="hover:text-deepgreen">Projects</a></li>
+              <li><a href="#contact" class="hover:text-deepgreen">Contact Us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-heading">Connect</h3>
+            <ul class="mt-3 space-y-2 text-sm text-gray-700">
+              <li>Phone: 024 328 4859 | 050 158 1628</li>
+              <li>Email: <a href="mailto:whitetemple4u2@gmail.com" class="hover:text-deepgreen">whitetemple4u2@gmail.com</a></li>
+              <li><a href="https://wa.me/233243284859" target="_blank" rel="noopener" class="hover:text-deepgreen">WhatsApp</a></li>
+              <li>No: 65 Derby Avenue, Accra</li>
+            </ul>
+            <div class="mt-4 flex items-center gap-3 text-gray-500">
+              <!-- Social icons -->
+              <a href="#" aria-label="Facebook" class="hover:text-deepgreen"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 9H15V7h-1.5C12.57 7 12 7.57 12 8.5V10H10v2h2v6h2v-6h1.5l.5-2H14v-1c0-.28.22-.5.5-.5z"/></svg></a>
+              <a href="#" aria-label="Instagram" class="hover:text-deepgreen"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm5.5-.75a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0z"/></svg></a>
+              <a href="https://wa.me/233243284859" aria-label="WhatsApp" target="_blank" rel="noopener" class="hover:text-deepgreen"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.94 11.94 0 0012.01 0C5.39 0 .01 5.38.01 12c0 2.11.55 4.18 1.6 6.01L0 24l6.17-1.6A11.95 11.95 0 0012 24c6.62 0 12-5.38 12-12 0-3.2-1.25-6.2-3.48-8.52zM12 22a9.9 9.9 0 01-5.06-1.42l-.36-.21-3.64.94.97-3.55-.23-.37A9.88 9.88 0 012 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm5.2-7.54c-.29-.14-1.7-.84-1.96-.93-.26-.1-.45-.14-.64.14-.19.29-.74.93-.91 1.12-.17.19-.34.22-.63.08-.29-.14-1.22-.45-2.33-1.43-.86-.77-1.43-1.72-1.6-2-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.08-.14-.64-1.55-.88-2.12-.23-.55-.47-.48-.64-.49h-.55c-.19 0-.48.07-.74.36-.26.29-1 1-.99 2.45 0 1.45 1.03 2.86 1.17 3.06.14.19 2.03 3.1 4.92 4.35.69.3 1.23.48 1.65.62.69.22 1.32.19 1.82.12.55-.08 1.7-.69 1.94-1.35.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.33z"/></svg></a>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-heading">Our Service</h3>
+            <ul class="mt-3 space-y-2 text-sm text-gray-700">
+              <li>Residential Roofing</li>
+              <li>UPVC Sliding Doors</li>
+              <li>Turkish Security Doors</li>
+              <li>Burglar Proofs</li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-8 border-t border-gray-100 pt-6 text-sm text-gray-500">© <span id="year"></span> White Temple Agencies Limited. Partnered with Feroof International. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/233243284859" target="_blank" rel="noopener" class="fixed bottom-6 right-6 inline-flex items-center justify-center h-12 w-12 rounded-full bg-green-500 text-white shadow-lg hover:bg-green-600" aria-label="Chat on WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.94 11.94 0 0012.01 0C5.39 0 .01 5.38.01 12c0 2.11.55 4.18 1.6 6.01L0 24l6.17-1.6A11.95 11.95 0 0012 24c6.62 0 12-5.38 12-12 0-3.2-1.25-6.2-3.48-8.52zM12 22a9.9 9.9 0 01-5.06-1.42l-.36-.21-3.64.94.97-3.55-.23-.37A9.88 9.88 0 012 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm5.2-7.54c-.29-.14-1.7-.84-1.96-.93-.26-.1-.45-.14-.64.14-.19.29-.74.93-.91 1.12-.17.19-.34.22-.63.08-.29-.14-1.22-.45-2.33-1.43-.86-.77-1.43-1.72-1.6-2-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.08-.14-.64-1.55-.88-2.12-.23-.55-.47-.48-.64-.49h-.55c-.19 0-.48.07-.74.36-.26.29-1 1-.99 2.45 0 1.45 1.03 2.86 1.17 3.06.14.19 2.03 3.1 4.92 4.35.69.3 1.23.48 1.65.62.69.22 1.32.19 1.82.12.55-.08 1.7-.69 1.94-1.35.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.33z"/></svg>
+    </a>
+
+    <!-- Quote Modal -->
+    <div id="quote-modal" class="fixed inset-0 z-[60] hidden">
+      <div id="quote-overlay" class="absolute inset-0 bg-black/50"></div>
+      <div class="absolute inset-0 grid place-items-center p-4">
+        <div class="w-full max-w-xl rounded-lg bg-white p-6 shadow-xl">
+          <div class="flex items-center justify-between">
+            <h3 class="font-heading text-xl">Request a Quote</h3>
+            <button data-close-quote class="rounded p-1 text-gray-500 hover:bg-gray-100" aria-label="Close">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M18.3 5.71L12 12l6.3 6.29-1.41 1.42L10.59 13.4 4.29 19.71 2.88 18.3 9.17 12 2.88 5.71 4.29 4.29 10.59 10.6 16.89 4.29z"/></svg>
+            </button>
+          </div>
+          <form id="quote-form-modal" class="mt-4 grid gap-4" novalidate>
+            <input type="text" name="name" placeholder="Name" required class="w-full rounded-md border-gray-300 focus:border-copper-500 focus:ring-copper-500" />
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input type="email" name="email" placeholder="Email" required class="w-full rounded-md border-gray-300 focus:border-copper-500 focus:ring-copper-500" />
+              <input type="tel" name="phone" placeholder="Phone" required class="w-full rounded-md border-gray-300 focus:border-copper-500 focus:ring-copper-500" />
+            </div>
+            <input type="text" name="subject" placeholder="Subject" class="w-full rounded-md border-gray-300 focus:border-copper-500 focus:ring-copper-500" />
+            <textarea name="message" rows="4" placeholder="Tell us about your project" required class="w-full rounded-md border-gray-300 focus:border-copper-500 focus:ring-copper-500"></textarea>
+            <button type="submit" class="inline-flex justify-center rounded-md bg-gradient-to-r from-copper-400 to-copper-600 px-5 py-3 font-medium text-white shadow-copper">Send Request</button>
+            <p id="quote-status-modal" class="text-sm"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/main.js" defer></script>
+  </body>
+</html>
